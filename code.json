@@ -18,6 +18,10 @@
           {
             "CapacityProvider": "NEW_VALUE",
             "Weight": 1
+          },
+          {
+            "CapacityProvider": "ANOTHER_NEW_VALUE",
+            "Weight": 1
           }
         ],
         "Configuration": {
