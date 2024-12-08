@@ -5,7 +5,7 @@
       "Type": "AWS::ECS::Cluster",
       "Properties": {
         "ClusterName": "MyFargateCluster",
-        "CapacityProviders": ["FARGATE", "FARGATE_SPOT"],
+        "CapacityProviders": ["FARGATE", "FARGATE_SPOT","NEW_VALUE"],
         "DefaultCapacityProviderStrategy": [
           {
             "CapacityProvider": "FARGATE",
@@ -13,6 +13,10 @@
           },
           {
             "CapacityProvider": "FARGATE_SPOT",
+            "Weight": 1
+          },
+          {
+            "CapacityProvider": "NEW_VALUE",
             "Weight": 1
           }
         ],
